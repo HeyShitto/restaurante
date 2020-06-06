@@ -2,3 +2,17 @@ body{
     background-color: #E5F1FB; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+h6{
+    color: red;
+}
+.producto{
+    font-size: 1.5rem;
+}
+#userImg{
+    width: 64px;
+    height: 64px;
+}
+.imgProducto{
+    width: 350px;
+    height: 200px;
+}
