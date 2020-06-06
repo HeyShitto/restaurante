@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #E5F1FB; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,3 +19,12 @@ h6{
     width: 350px;
     height: 200px;
 }
+td{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .producto {
+      width: 100%;
+    }
+  }
