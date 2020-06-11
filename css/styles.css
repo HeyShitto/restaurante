@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #E5F1FB; 
+    background-image: url("../assets/img/back.jpg");
+    background-repeat: repeat-y;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 h6{
     color: red;
+    margin: 25px 50px 75px 100px;
+    padding: 25px 50px 75px;
 }
 .producto{
     font-size: 1.5rem;
