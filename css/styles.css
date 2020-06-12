@@ -6,6 +6,7 @@ body{
     background-repeat: repeat-y;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    text-transform: capitalize;
 }
 h6{
     color: red;
@@ -26,9 +27,64 @@ h6{
 td{
     text-align: center;
 }
+fieldset{
+    width: 18rem;
+    outline-style: dotted;
+    outline-color: white;
+    outline-width: thin;
+    outline-offset: .1rem;
+}
+legend{
+    text-shadow: 2px 2px red;
+
+}
+#nelWe{
+    text-decoration: line-through;
+}
 
 @media screen and (max-width: 800px) {
     .producto {
       width: 100%;
     }
+  }
+
+a:link {
+color: red;
+}
+
+/* visited link */
+a:visited {
+color: green;
+}
+
+/* mouse over link */
+a:hover {
+color: hotpink;
+}
+
+/* selected link */
+a:active {
+color: blue;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+  ul{
+    list-style-type: none;
+
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  table{
+    visibility: visible;
   }

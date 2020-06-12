@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/styles.css">
     <noscript>Sorry, tu navegador no soporta JavaScript!</noscript>
     <title>Restauranto</title>
     <meta name="description" content="pagina restaurante">
     <meta name="keywords" content="sushi, comida, delicioso, barato">
     <meta name="author" content="Javier Martinez">
+    
 </head>
 <body>
     <img src="assets/img/logo2.png" alt="logo" style="width: 6.5rem;">
@@ -66,7 +69,7 @@
           </tr>
       </table>
       <fieldset>
-        <legend>Dejanos un comentario:</legend>
+        <legend>Dejanos <span id="nelWe">tu dinero</span> un comentario<i class="material-icons">favorite</i>:</legend>
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <span>Mostrar quien comenta?</span>
         <input type="radio" id="si" name="identidad" value="si">
@@ -74,9 +77,11 @@
         <input type="radio" id="no" name="identidad" value="no">
         <label for="no">no</label><br>
         <button>Comentar</button>
+
       </fieldset>
     <h4>direccion</h4>
-    <h5 style="background-color: rgb(184, 255, 220);">
+    <h5 style="background-color: rgb(184, 255, 220); color: black;">
+    <address>
         Written by John Doe.<br>
         Visit us at:<br>
         Example.com<br>
