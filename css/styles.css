@@ -29,62 +29,114 @@ td{
 }
 fieldset{
     width: 18rem;
+    max-width: 20rem;
     outline-style: dotted;
     outline-color: white;
     outline-width: thin;
     outline-offset: .1rem;
+    position: relative;
+    left: 20rem;
+    top: 1rem;
+}
+#nosotros{
+  overflow: auto;
 }
 legend{
-    text-shadow: 2px 2px red;
-
+  text-shadow: 2px 2px red;
 }
 #nelWe{
     text-decoration: line-through;
 }
+#navegacion{
+  position: sticky;
+  opacity: 0.8;
+  float: right;
+}
+#logo{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
 
-@media screen and (max-width: 800px) {
-    .producto {
-      width: 100%;
-    }
-  }
+ul{
+  list-style-type: none;
+
+}
+table, th, td {
+  border: 1px solid black;
+}
+table{
+  visibility: visible;
+}
+span{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #0918e7 ;  
+}
+#contenido{
+  position: relative;
+  top: 4rem;
+}
+div p {
+  background-color: #c47f7b;
+}
+div > p {
+  background-color: #7ec47b;
+}
+div + p {
+  background-color: #7b92c4;
+}
+div ~ p {
+  background-color: #c47bc4;
+}
+a.highlight:hover {
+  color: #ff0000;
+}
+
 
 a:link {
-color: red;
+  color: #47596b;
 }
 
 /* visited link */
 a:visited {
-color: green;
+  color: green;
 }
 
 /* mouse over link */
 a:hover {
-color: hotpink;
+  color: hotpink;
 }
 
 /* selected link */
 a:active {
-color: blue;
+  color: blue;
 }
 a:link, a:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
   
-  a:hover, a:active {
-    background-color: red;
+a:hover, a:active {
+  background-color: red;
+}
+p::first-line {
+  color: #8bdf1d;
+  font-variant: small-caps;
+}
+p::first-letter {
+  color: #ff00001c;
+  font-size: xx-large;
+}
+@media screen and (max-width: 800px) {
+  .producto {
+    width: 100%;
   }
-  ul{
-    list-style-type: none;
-
-  }
-  table, th, td {
-    border: 1px solid black;
-  }
-  table{
-    visibility: visible;
-  }
+}

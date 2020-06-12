@@ -14,8 +14,8 @@
     
 </head>
 <body>
-    <img src="assets/img/logo2.png" alt="logo" style="width: 6.5rem;">
-    <nav>
+    <img src="assets/img/logo2.png" alt="logo" style="width: 6.5rem;" id="logo">
+    <nav id="navegacion">
         <ul>
             <li><a href="#">Nosotros</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -25,72 +25,78 @@
     </nav>
     <button onclick="location.href='cuenta.html'">Mi cuenta</button>
     
-    <h1>Restauranto</h1>
-    <h2><q>Lugar agradable donde pasar el rato</q></h2>
-    <h4>Pensando en ti</h4>
-    <p>Un concepto donde <strong>la familia y amigos</strong> pueden <mark>pasar un buen rato</mark> disfrutando de un excelente servicio en un Restaurant Sports Bar.</p>
-    <h4>sobre nosotros</h4>
-    <pre>somos un lugar que Lorem ipsum dolor,<br>sit amet consectetur adipisicing elit. <br>Iste labore harum nisi. Porro id <br>nesciunt <sub>tempora</sub> sint <sup>optio</sup> eius aliquam <br>eligendi reiciendis magnam odio suscipit <br>velit, odit <small>consequuntur</small>! Rerum, atque!</pre>
-    <h4>Los mejores ingredientes</h4>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ratione, explicabo aperiam molestias iure repudiandae magnam eligendi consequatur. Ea iste voluptatem iure id sit beatae reiciendis ipsam est accusamus. <i>Velit</i> ?</p>
-    <iframe src="https://www.youtube.com/embed/BrDkL5Y7kCs?t=42" frameborder="0" allow='autoplay' allowfullscreen width="960" height="447"></iframe>
-    <h4 style="color: red;">mision</h4>
-    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolore dignissimos itaque necessitatibus amet, quod, deserunt aut eaque quae tempore illo quaerat excepturi eius non laudantium adipisci, ullam nemo dicta.</p>
-    <h4 style="color: red;">vision</h4>
-    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Aspernatur</em> rem earum repudiandae exercitationem enim, officiis voluptate vero id maiores neque non veniam necessitatibus fugiat corrupti, maxime fuga dignissimos, sequi quia.</p>
-    <h4>recomendaciones</h4>
-    <blockquote style="border:2px solid rgb(250, 91, 50);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui nulla eaque recusandae facere accusantium ea perspiciatis dolores, voluptatum dolorem mollitia perferendis, officia reiciendis, iusto error ipsum adipisci voluptate at?</blockquote>
-    <h4>Nuestro Equipo</h4>
-    <table style="width:100%">
-        <tr>
-          <th>Nombre</th>
-          <th>apellido</th> 
-          <th>puesto</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>camarero</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>cocinero</td>
-        </tr>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>cocinero</td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>Cruz</td>
-            <td>Recepcionista</td>
+    <div id="contenido">
+      <h1>Restauranto</h1>
+      <h2><q>Lugar agradable donde pasar el rato</q></h2>
+      <h4>Pensando en ti</h4>
+      <p>Un concepto donde <strong>la familia y amigos</strong> pueden <mark>pasar un buen rato</mark> disfrutando de un excelente servicio en un Restaurant Sports Bar.</p>
+      <section id="nosotros">
+        <h4>sobre nosotros</h4>
+        <pre>somos un lugar que Lorem ipsum dolor,<br>sit amet consectetur adipisicing elit. <br>Iste labore harum nisi. Porro id <br>nesciunt <sub>tempora</sub> sint <sup>optio</sup> eius aliquam <br>eligendi reiciendis magnam odio suscipit <br>velit, odit <small>consequuntur</small>! Rerum, atque!</pre>
+      </section>
+      <h4>Los mejores ingredientes</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ratione, explicabo aperiam molestias iure repudiandae magnam eligendi consequatur. Ea iste voluptatem iure id sit beatae reiciendis ipsam est accusamus. <i>Velit</i> ?</p>
+      <iframe src="https://www.youtube.com/embed/BrDkL5Y7kCs?t=42" frameborder="0" allow='autoplay' allowfullscreen width="960" height="447"></iframe>
+      <h4 style="color: red;">mision</h4>
+      <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolore dignissimos itaque necessitatibus amet, quod, deserunt aut eaque quae tempore illo quaerat excepturi eius non laudantium adipisci, ullam nemo dicta.</p>
+      <h4 style="color: red;">vision</h4>
+      <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Aspernatur</em> rem earum repudiandae exercitationem enim, officiis voluptate vero id maiores neque non veniam necessitatibus fugiat corrupti, maxime fuga dignissimos, sequi quia.</p>
+      <h4>recomendaciones</h4>
+      <blockquote style="border:2px solid rgb(250, 91, 50);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui nulla eaque recusandae facere accusantium ea perspiciatis dolores, voluptatum dolorem mollitia perferendis, officia reiciendis, iusto error ipsum adipisci voluptate at?</blockquote>
+      <h4>Nuestro Equipo</h4>
+      <table style="width:100%">
+          <tr>
+            <th>Nombre</th>
+            <th>apellido</th> 
+            <th>puesto</th>
           </tr>
-      </table>
-      <fieldset>
-        <legend>Dejanos <span id="nelWe">tu dinero</span> un comentario<i class="material-icons">favorite</i>:</legend>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <span>Mostrar quien comenta?</span>
-        <input type="radio" id="si" name="identidad" value="si">
-        <label for="si">si</label><br>
-        <input type="radio" id="no" name="identidad" value="no">
-        <label for="no">no</label><br>
-        <button>Comentar</button>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>camarero</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>cocinero</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>cocinero</td>
+          </tr>
+          <tr>
+              <td>Maria</td>
+              <td>Cruz</td>
+              <td>Recepcionista</td>
+            </tr>
+        </table>
+        <fieldset>
+          <legend>Dejanos <span id="nelWe">tu dinero</span> un comentario<i class="material-icons">favorite</i>:</legend>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <span>Mostrar quien comenta?</span>
+          <input type="radio" id="si" name="identidad" value="si">
+          <label for="si">si</label><br>
+          <input type="radio" id="no" name="identidad" value="no">
+          <label for="no">no</label><br>
+          <button>Comentar</button>
 
-      </fieldset>
-    <h4>direccion</h4>
-    <h5 style="background-color: rgb(184, 255, 220); color: black;">
-    <address>
-        Written by John Doe.<br>
-        Visit us at:<br>
-        Example.com<br>
-        Box 564, Disneyland<br>
-        USA
-    </address>
-    <footer>
-        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-        <span>&#128151;Devel&empty;pment &nbsp; by &nbsp; &rarr;	&sum; JavierMx &forall; &larr; &#128151;	&copy;</span>
-    </footer>
+        </fieldset>
+      <section>
+        <h4>direccion</h4>
+        <h5 style="background-color: rgb(184, 255, 220); color: black;">
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+      </section>
+      <footer>
+          <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+          <span>&#128151;Devel&empty;pment &nbsp; by &nbsp; &rarr;	&sum; JavierMx &forall; &larr; &#128151;	&copy;</span>
+      </footer>
+    </div>
 </body>
 </html>
