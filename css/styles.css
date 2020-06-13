@@ -84,7 +84,7 @@ div p {
   background-color: #c47f7b;
 }
 div > p {
-  background-color: #7ec47b;
+  background-color: #7ec47b33;
 }
 div + p {
   background-color: #7b92c4;
@@ -103,7 +103,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: green;
+  color: #0918e707;
 }
 
 /* mouse over link */
@@ -127,16 +127,55 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: red;
 }
-p::first-line {
-  color: #8bdf1d;
-  font-variant: small-caps;
-}
+
 p::first-letter {
   color: #ff00001c;
   font-size: xx-large;
 }
+li{
+  display: inline;
+}
+
+div.contenido {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.contenido:hover {
+  border: 1px solid #777;
+}
+
+div.contenido  img {
+  width: 100%;
+  height: auto;
+}
+
+
 @media screen and (max-width: 800px) {
   .producto {
     width: 100%;
   }
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(170, 140, 140, 0.829);
+  padding: 12px 16px;
+  z-index: 1;
+  color: white;
+  background-color: rgba(24, 32, 25, 0.829);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
