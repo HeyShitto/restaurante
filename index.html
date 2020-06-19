@@ -99,6 +99,23 @@
             USA
         </address>
       </section>
+      <p id="demo"></p>
+      <p>Input your age and click the button:</p>
+
+      <input id="age" value="18" />
+
+      <button onclick="myFunction()">Try it</button>
+
+      <p id="domo"></p>
+
+      <script>
+      function myFunction() {
+        var age, voteable;
+        age = document.getElementById("age").value;
+        voteable = (age < 18) ? "Too young":"Old enough";
+        document.getElementById("domo").innerHTML = voteable + " to vote.";
+      }
+      </script>
       <footer>
           <p><cite>The Scream</cite> by <a href="https:www.google.com" style="a[target=_blank]"> Edvard Munch. Painted in 1893.</a></p>
           <span>&#128151;Devel&empty;pment &nbsp; by &nbsp; &rarr;	&sum; JavierMx &forall; &larr; &#128151;	&copy;</span>
@@ -106,6 +123,6 @@
       <script>
         console.log(5 + 6);
         </script>
-    </div>
+    </div>  
 </body>
 </html>
