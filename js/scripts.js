@@ -59,12 +59,86 @@ var absolu=Math.abs(-4.7);
 var rand1 =Math.floor(Math.random() * 10);
 
 
-function myFunction() {
+function myFunction2() {
     document.getElementById("dropdown-we").innerHTML = window.alert("so sad");
 }
 function suma(n1,n2){
-    return n1+n2;
+    if (isNaN(n1)|| isNaN(n2)) {
+        return null;
+    }else{
+        return n1+n2;
+    }
 }
 function showme(){
     document.getElementById("dropdown-we").innerHTML = person["firstName"] + " " + person["lastName"];
 }
+
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("dimo").innerHTML = "Hoy es " + day;
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+do {
+    text += "The number is " + i;
+    i++;
+    if (i == 10) {
+        break;
+    }else{
+        continue;
+    }
+  }
+  while (i < 10);
+var str=String(100 + 23);
+var x4 = 5 | 1;
+var str = "Visit Microsoft!";
+var res = str.replace(/microsoft/i, "our restaurant");
+function myinput() {
+    var message, x;
+    message = document.getElementById("p01");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try { 
+      if(x == "")  throw "empty";
+      if(isNaN(x)) throw "not a number";
+      x = Number(x);
+      if(x < 5)  throw "too low";
+      if(x > 10)   throw "too high";
+    }
+    catch(err) {
+      message.innerHTML = "Input is " + err;
+    }
+}
+class Car {
+    constructor(brand) {
+      this.carname = brand;
+    }
+    present() {
+      return "I have a " + this.carname;
+    }
+  }
+  
+  mycar = new Car("Ford");
+  document.getElementById("dimi").innerHTML = mycar.present();
