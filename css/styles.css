@@ -1,13 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html, body{
+    font-size: 62.5%;/*62.5 es igual a 10px. ejemplo 1.8rem == 18px*/ 
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #242528;
+}
+.nav ul {
+    margin: 0;
 }
 
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
 li, a, button{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -16,14 +38,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 3rem 10%;
+    
+    background-color: #242528;
 }
 
-logo{
+#logo{
     cursor: pointer;
 }
 .nav-links{
     list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-align: center;
 }
 .nav-links li{
     display: inline-block;
@@ -31,6 +58,7 @@ logo{
 }
 .nav-links li a{
     transition: all 0.3s ease 0s;
+    font-size: 3rem;
 }
 .nav-links li a:hover{
     color: #0088a9;
@@ -47,3 +75,30 @@ button{
 button:hover{
     background-color:  rgba(0, 136, 169, 0.8);
 }
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+/*********Estilos header footer arriba***************************/
