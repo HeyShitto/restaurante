@@ -101,4 +101,49 @@ button:hover{
     height: 30px;
 }
 
-/*********Estilos header footer arriba***************************/
+/*********Estilos nav y footer arriba***************************/
+
+.nombre-web {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: white;
+}
+
+.jav-container:after,.jav-container:before{content:"";display:table;clear:both}
+.jav-container{padding:0.01em 16px; font-size: 2rem;}
+.jav-back{
+    color:#fff!important;
+    background-color:rgba(0, 0, 0, .6);
+    background-image: url("../assets/img/back-food-1.jpg"); 
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.jav-center .jav-bar{display:inline-block;width:auto}
+.jav-center{text-align:center}
+.jav-center{text-align:center!important}
+.jav-margin{margin:16px!important}
+.jav-jumbo{font-size:64px!important}
+.slogan{
+    font-size:24px!important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.jav-row-padding:after,.jav-row-padding:before{content:"";display:table;clear:both}
+.jav-row-padding,.jav-row-padding>.jav-twothird{padding:0 8px}
+.jav-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.jav-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.jav-content,.jav-auto{margin-left:auto;margin-right:auto}
+.jav-content{max-width:980px}
+.jav-twothird{float:left;width:100%}
+.jav-twothird{width:66.66666%}
+.jav-third{float:left;width:100%}
+.jav-third{width:33.33333%}
+.jav-third,.jav-row-padding>.jav-twothird{padding:0 8px}
+
+.jav-margin-right{margin-right:16px!important}
+.jav-light-grey,.jav-hover-light-grey:hover,.jav-light-gray,.jav-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+
