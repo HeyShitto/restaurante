@@ -19,10 +19,10 @@
     <img src="assets/img/logo2.png" alt="logo" style="width: 6.5rem;" id="logo">
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Nosotros</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Nuestro equipo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#nosotros">Nuestro equipo</a></li>
       </ul>
     </nav>
     <a href="cuenta.html" class="cuenta"><button>Mi cuenta</button></a>
@@ -37,32 +37,59 @@
   <div class="jav-row-padding jav-padding-64 jav-container">
     <div class="jav-content">
       <div class="jav-twothird">
-        <h1>Title is here vato</h1>
-        <h5 class="jav-padding-32">Here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+        <h1 id="nosotros">Sobre Nosotros</h1>
+        <p class="jav-padding-32">Somos Un Lugar Que Lorem Ipsum Dolor,
+          Sit Amet Consectetur Adipisicing Elit. 
+          Iste Labore Harum Nisi. Porro Id 
+          Nesciunt Tempora Sint Optio Eius Aliquam 
+          Eligendi Reiciendis Magnam Odio Suscipit 
+          Velit, Odit Consequuntur! Rerum, Atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus maiores at amet eius, aliquam nam culpa distinctio natus deserunt cupiditate corrupti dignissimos repellendus ullam repellat necessitatibus voluptates velit. At.</p>
       </div>
       <div class="jav-third jav-center">
-        <img class="fa fa-anchor jav-padding-64 jav-text-red" src="assets/img/Youtube Logo.png" style="background-color: black;">
+        <img class="jav-padding-64 jav-text-red imgSeccion" src="assets/img/nosotros.jpeg">
       </div>
     </div>
   </div>
 
   <!-- Second Grid -->
-<div class="jav-row-padding jav-light-grey jav-padding-64 jav-container">
-  <div class="jav-content">
-    <div class="jav-third jav-center">
-      <img class="fa fa-anchor jav-padding-64 jav-text-red jav-margin-right" src="assets/img/Youtube Logo.png" style="background-color: black;">
-    </div>
+  <div class="jav-row-padding jav-light-grey jav-padding-64 jav-container">
+    <div class="jav-content">
+      <div class="jav-third jav-center">
+        <img class="jav-padding-64 jav-text-red jav-margin-right imgSeccion" src="assets/img/ingredientes.jpg">
+      </div>
 
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <div class="w3-twothird">
+        <h1 id="ingredientes">Los Mejores Ingredientes</h1>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="w3-text-grey">Contamos con los mejores ingredientes de la region para proporcionarte el mejor servicio y el mejor sabor a tu platillo, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nobis molestias animi! Aperiam voluptates fuga vel, ducimus architecto quaerat ipsam, aliquam veritatis at excepturi enim et repellat explicabo tempore dolorem?</p>
+      </div>
     </div>
   </div>
-</div>
+
+  <div class="jav-row-padding jav-padding-64 jav-container">
+    <div class="jav-content">
+      <h1 id="contacto">Contacto</h1>
+      <form action="#">
+
+        <label for="fname">Primer Nombre:</label>
+        <input type="text" id="fname" name="PrimerNombre" placeholder="Tu nombre..">
+    
+        <label for="lname">Apellido:</label>
+        <input type="text" id="lname" name="apellido" placeholder="Apellido..">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email..">
+
+        <label for="subject">Mensaje</label>
+        <textarea id="subject" name="mensaje" placeholder="Escribe aqui tu comentario o sugerencia..." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+  </div>
 
   <footer class="main-footer">
     <div class="container main-footer-container">

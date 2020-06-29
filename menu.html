@@ -8,74 +8,209 @@
     <meta name="description" content="pagina restaurante">
     <meta name="keywords" content="sushi, comida, delicioso, barato">
     <meta name="author" content="Javier Martinez">
+    <script src="js/scripts.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <img src="assets/img/logo2.png" alt="logo" style="width: 6.5rem;">
-    <nav>
-        <ul>
+    <header>
+        <a href="index.html"><img src="assets/img/logo2.png" alt="logo" style="width: 6.5rem;" id="logo"></a>
+        <nav>
+          <ul class="nav-links">
             <li><a href="#">Nosotros</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <button onclick="location.href='cuenta.html'">Mi cuenta</button>
-    <aside>
-        <h3>Carrito:</h3>
-        <form action="">
-            <div style="border:2px solid rgb(250, 91, 50);"></div>
-            <label for="">Total $</label>
-            <button>Comprar</button>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="#">Nuestro equipo</a></li>
+          </ul>
+        </nav>
+        <a href="cuenta.html" class="cuenta"><button>Mi cuenta</button></a>
+      </header>
+      
+      <div class="categorias">
+        <h2 class="section-header" style="font-size: 3rem; float: left;">Categorias</h2>
+        <button class="btn active" onclick="filterSelection('all')"> Todas</button>
+        <button class="btn" onclick="filterSelection('hamburgesas')"> Hamburgesas</button>
+        <button class="btn" onclick="filterSelection('bebidas')"> Bebidas</button>
+        <button class="btn" onclick="filterSelection('sushis')"> Sushis</button>
+      </div>
+      
+      <section class="jav-container content-section filterDiv hamburgesas">
+        <h2 class="section-header">Hamburguesas</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">La maravilla</span>
+                <img class="shop-item-image" src="assets/img/maravilla.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Coralito</span>
+                <img class="shop-item-image" src="assets/img/coralito.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button"type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">La Vestia</span>
+                <img class="shop-item-image" src="assets/img/vestia.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$18.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Especial</span>
+                <img class="shop-item-image" src="assets/img/especial.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Sencilla</span>
+                <img class="shop-item-image" src="assets/img/sencilla.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$10.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="jav-container content-section filterDiv bebidas">
+        <h2 class="section-header">Bebidas</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Cola</span>
+                <img class="shop-item-image" src="assets/img/cola.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Cafe</span>
+                <img class="shop-item-image" src="assets/img/cafe.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Limonada</span>
+                <img class="shop-item-image" src="assets/img/limonada.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$8.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Agua natural</span>
+                <img class="shop-item-image" src="assets/img/agua.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$5.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Tea</span>
+                <img class="shop-item-image" src="assets/img/tea.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$7.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="jav-container content-section filterDiv sushis">
+        <h2 class="section-header">Sushis</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">California Roll</span>
+                <img class="shop-item-image" src="assets/img/california.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$39.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Vergetariano</span>
+                <img class="shop-item-image" src="assets/img/vegetariano.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$26.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Cielo mar y tierra</span>
+                <img class="shop-item-image" src="assets/img/cielo-mar.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$28.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Chipotle</span>
+                <img class="shop-item-image" src="assets/img/chipotle.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$25.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Añadir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="jav-container content-section" id="carrito-total">
+        <h2 class="section-header">Pedido</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Producto</span>
+            <span class="cart-price cart-header cart-column">Precio</span>
+            <span class="cart-quantity cart-header cart-column">Cantidad</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">Comprar</button>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin: auto;
+        width: 10%">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="LGGK7QBDQPBVL">
+            <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif"  name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+            <img alt=""src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
         </form>
-    </aside>
-    <ul>
-        <li><a>Rollos</a></li>
-        <li><a>Bombas</a></li>
-        <li><a>Entradas</a></li>
-        <li><a>Platillos</a></li>
-        <li><a>Hamburguesas</a></li>
-        <li><a>Bebidas</a></li>
-    </ul>
-    <form action="#">
-        <label>busqueda avanzada</label>
-        <input type="text" placeholder="Nombre del producto a buscar">
-        <select id="producto" name="Categorias">
-            <option value="Rollos">Rollos</option>
-            <option value="Bombas">Bombas</option>
-            <option value="Entradas">Entradas</option>
-            <option value="Platillos">Platillos</option>
-            <option value="Hamburguesas">Hamburguesas</option>
-            <option value="Bebidas">Bebidas</option>
-          </select>
-    </form>
-    <div class="Productos">
-        <div class="producto">
-            <a target="_blank" href="img_5terre.jpg">
-                <img src="assets/img/noFoto.png" alt="" class="imgProducto">
-            </a>
-            <h5>Rollo california</h5>
-            <h6>$100.0</h6>
+            
+    </section>
+
+    <div class="containerButton">
+        <div class="btn-holder">
+            <a href="#carrito-total" style="color: black;"><i class="fa fa-shopping-cart"></i></a>
         </div>
-        <div class="producto">
-            <a target="_blank" href="img_5terre.jpg">
-                <img src="assets/img/noFoto.png" alt="" class="imgProducto">
-            </a>
-            <h5>Rollo Mexicano</h5>
-            <h6>$95.0</h6>
-        </div>
-        <div class="producto">
-            <a target="_blank" href="img_5terre.jpg">
-                <img src="assets/img/noFoto.png" alt="" class="imgProducto">
-            </a>
-            <h5>Rollo Tangamandapio</h5>
-            <h6>$90.0</h6>
-        </div>
-        <div class="producto">
-            <a target="_blank" href="img_5terre.jpg">
-                <img src="assets/img/noFoto.png" alt="" class="imgProducto">
-            </a>
-            <h5>Tokyo Roll</h5>
-            <h6>$110.0</h6>
-        </div> 
     </div>
+
+      <footer class="main-footer">
+        <div class="jav-container main-footer-container">
+            <h3 class="nombre-web">The Foody</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="assets/img/Youtube Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com" target="_blank">
+                        <img src="assets/img/Spotify Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/img/Facebook Logo.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </footer>
 </body>
 </html>
